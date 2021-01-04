@@ -11,8 +11,8 @@ import {
 } from "./Root";
 import { superUrl } from "../Data";
 import { BlogContext } from "../contexts/BlogContext";
-import "../App.css";
-import "../blog.css";
+import "../css/App.css";
+import "../css/blog.css";
 
 export function RouteComponent() {
   const context = useContext(BlogContext);

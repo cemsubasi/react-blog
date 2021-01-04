@@ -3,8 +3,8 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { BlogContext } from "../contexts/BlogContext";
 import { url3 } from "../Data";
-import "../signin.css";
-import logo from "../logo1.svg";
+import "../css/signin.css";
+import logo from "../img/logo1.svg";
 
 export function LoginBody() {
   const context = useContext(BlogContext);
@@ -26,7 +26,7 @@ export function LoginBody() {
   };
 
   return (
-    <div className="App">
+    <div className="LoginBody">
       <div className="form-signin">
         <img className="mb-4" src={logo} alt="" width="150" height="120" />
         <h1 className="h3 mb-3 fw-normal">Please sign in</h1>

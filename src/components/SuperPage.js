@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { BlogContext } from "../contexts/BlogContext";
-import "../App.css";
-import "../blog.css";
 import { dateParsed } from "../Data";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { useEffect } from "react";
+import "../css/App.css";
+import "../css/blog.css";
 
 export function SuperList() {
   const context = useContext(BlogContext);
@@ -64,11 +64,7 @@ export function SuperForm() {
   const context = useContext(BlogContext);
 
   const Submit = () => {
-    if (inputState.postUrl === "" || inputState.postUrl.includes(" "))
-      return context.errStateHandler(1);
-    else {
-      return context.setStateHandler(inputState, inputStateClear);
-    }
+    return context.setStateHandler(inputState, inputStateClear);
   };
 
   const [text, setText] = useState("");
@@ -101,7 +97,7 @@ export function SuperForm() {
       featured: false,
       comments: [],
     });
-  console.log(inputState);
+
   return (
     <div className="container">
       {(() => {

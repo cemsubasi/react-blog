@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { BlogContext } from "../contexts/BlogContext";
 import parse from "html-react-parser";
-import "../App.css";
-import "../blog.css";
+import "../css/App.css";
+import "../css/blog.css";
 
 export function PostCards() {
   const context = useContext(BlogContext);

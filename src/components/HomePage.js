@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { BlogContext } from "../contexts/BlogContext";
 import parse from "html-react-parser";
-import logo from "../logo.svg";
-import "../App.css";
-import "../blog.css";
+import logo from "../img/logo.svg";
+import "../css/App.css";
+import "../css/blog.css";
 
 export function HomeHeader() {
   return (
@@ -66,7 +66,7 @@ export function HomeHeader() {
             <Link to="/about" className="p-2 link-secondary">
               About
             </Link>
-            <Link to="/about" className="p-2 link-secondary">
+            <Link to="/" className="p-2 link-secondary">
               Contact
             </Link>
           </nav>

@@ -15,8 +15,8 @@ import { AboutBody } from "./AboutPage";
 import { LoginBody } from "./LoginPage";
 import parse from "html-react-parser";
 
-import "../App.css";
-import "../blog.css";
+import "../css/App.css";
+import "../css/blog.css";
 
 export function HomePage() {
   return (
@@ -83,7 +83,7 @@ export function DummyPage() {
     <div className="container">
       <HomeHeader />
       <div className="container pt-4 m-auto p-5">
-        <h2 className="text-center">{dummyObj.postHeader}</h2>
+        <h2 className="text-center pb-4">{dummyObj.postHeader}</h2>
         <div>{parse(dummyObj.postBody)}</div>
         <p style={{ textAlign: "right", color: "#9FA4A7" }}>{dummyObj.date}</p>
       </div>

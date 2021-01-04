@@ -1,7 +1,7 @@
 import React from "react";
-import "../App.css";
-import "../blog.css";
-import logo from "../logo.svg";
+import "../css/App.css";
+import "../css/blog.css";
+import logo from "../img/logo.svg";
 
 export function AlbumBody() {
   return (

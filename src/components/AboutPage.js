@@ -1,7 +1,7 @@
 import React from "react";
-import "../App.css";
-import "../blog.css";
-import pp from "../pp.svg";
+import "../css/App.css";
+import "../css/blog.css";
+import pp from "../img/pp.svg";
 
 export function AboutBody() {
   return (
